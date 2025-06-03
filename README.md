@@ -15,9 +15,9 @@
 
 <h2 id="projeto">PROJETO</h2>
 
-> Site criado com carinho e nas melhores intenções para apoiar a recuperação de Ana Luiza, uma pessoa muito próxima a mim que está passando por uma situação de saúde extremamente delicada. A ideia foi centralizar e facilitar o acesso aos links de arrecadação criados pela família, ajudando a ampliar o alcance da campanha de forma sensível e respeitosa.
+Site criado com carinho e nas melhores intenções para apoiar a recuperação de Ana Luiza, uma pessoa muito próxima a mim que está passando por uma situação de saúde extremamente delicada. A ideia foi centralizar e facilitar o acesso aos links de arrecadação criados pela família, ajudando a ampliar o alcance da campanha de forma sensível e respeitosa.
 
-- 🌐 <a href="https://ajudeanaluiza.vercel.app/">Acesse o site</a>
+🌐 <a href="https://ajudeanaluiza.vercel.app/">Acesse o site</a>
 
 <h2 id="funcionalidades">FUNCIONALIDADES</h2>
 
