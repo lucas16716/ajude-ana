@@ -20,6 +20,18 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
+/* Centraliza em telas menores */
+@media (max-width: 600px) {
+  .language-switch {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .lang-toggle {
   display: flex;
   align-items: center;
