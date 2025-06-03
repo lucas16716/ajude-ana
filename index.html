@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assests/images/donation.png" type="png" />
+  <title>SOS Ana Luiza</title>
+</head>
+
+<body>
+  <header>
+    <div class="language-switch dropdown">
+      <button class="lang-toggle" onclick="toggleMenu()">
+        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/f0f0f0/globe--v1.png" alt="globe--v1" />
+        <span id="current-lang">PT</span> ▼
+      </button>
+      <ul class="lang-menu" id="lang-menu">
+        <li onclick="changeLanguage('pt')">🇧🇷 Português</li>
+        <li onclick="changeLanguage('en')">🇺🇸 English</li>
+      </ul>
+    </div>
+    <h1 id="main-title">Ajude a Ana Luiza 💜</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="description" id="main-description">
+        <!-- Português -->
+        <div data-lang="pt">
+          <p>
+            Ana Luiza, de apenas 25 anos, sofreu um grave acidente nos Estados Unidos e está atualmente em estado delicado após um traumatismo craniano. Ela passou por uma neurocirurgia de emergência e está internada na UTI. Neste momento, cada dia é uma batalha, mas ela tem mostrado uma força imensa e continua lutando com coragem.
+          </p>
+          <p>
+            Os custos médicos nos Estados Unidos são extremamente altos. Só o transporte de ambulância, necessário no momento do resgate, custou cerca de 20 mil dólares. E com a continuidade do tratamento, exames, internação e medicamentos, a família enfrenta uma situação financeira muito desafiadora.
+          </p>
+          <p>
+            Por isso, criamos essa campanha para arrecadar fundos e garantir que a Ana tenha acesso a tudo que precisa nesse processo tão difícil de recuperação. Toda ajuda é bem-vinda — seja com uma contribuição financeira ou compartilhando essa mensagem com outras pessoas.
+          </p>
+          <p>
+            Se não puder doar, pedimos com carinho que continue orando por ela e divulgando essa causa 🙏🏻
+          </p>
+          <p>
+            Com o apoio de cada um, podemos fazer a diferença na vida da Ana Luiza.<br>
+            <strong>Contamos com a sua solidariedade. Obrigado!</strong>
+          </p>
+        </div>
+
+        <!-- Inglês -->
+        <div data-lang="en" style="display: none;">
+          <p>
+            Ana Luiza, only 25 years old, was in a serious accident in the United States and is currently in critical condition after suffering a traumatic brain injury. She underwent emergency neurosurgery and is now in the ICU. Right now, every day is a battle, but she has shown incredible strength and continues to fight with courage.
+          </p>
+          <p>
+            Medical costs in the U.S. are extremely high. The ambulance ride alone, which was necessary during the emergency, cost around $20,000. As her treatment continues — including exams, hospitalization, and medications — her family is facing a very difficult financial situation.
+          </p>
+          <p>
+            That’s why we created this campaign: to raise funds and ensure Ana has access to everything she needs during this challenging recovery process. Any kind of help is welcome — whether through a donation or by sharing this message with others.
+          </p>
+          <p>
+            If you’re unable to donate, we kindly ask that you keep her in your prayers and help us spread the word. 🙏🏻
+          </p>
+          <p>
+            With the support of each and every one of you, we can make a difference in Ana Luiza’s life.<br>
+            <strong>Thank you for your solidarity!</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="donation-buttons">
+      <a href="https://www.vakinha.com.br/vaquinha/ajuda-para-recuperacao-da-ana-luiza-thaissa-assis-nunes-proenca" class="donate-button br" target="_blank">Doe em Real (Vakinha)</a>
+      <a href="https://www.gofundme.com/f/xuvhfh-support-anas-journey-to-recovery" class="donate-button en" target="_blank">Donate in USD (GoFundMe)</a>
+    </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery" id="gallery">
+        <!-- As imagens devem estar na pasta /assets e listadas abaixo -->
+        <img src="./assets/images/1.png" alt="Foto 1" />
+        <img src="./assets/images/2.jpg" alt="Foto 2" />
+        <img src="./assets/images/3.jpg" alt="Foto 3" />
+        <img src="./assets/images/4.png" alt="Foto 4" />
+        <img src="./assets/images/5.png" alt="Foto 5" />
+        <img src="./assets/images/6.png" alt="Foto 6" />
+        <img src="./assets/images/7.png" alt="Foto 7" />
+        <img src="./assets/images/8.png" alt="Foto 8" />
+        <img src="./assets/images/9.png" alt="Foto 9" />
+        <img src="./assets/images/10.png" alt="Foto 10" />
+        <img src="./assets/images/11.png" alt="Foto 11" />
+        <img src="./assets/images/12.png" alt="Foto 12" />
+        <img src="./assets/images/13.png" alt="Foto 13" />
+        <img src="./assets/images/14.png" alt="Foto 14" />
+        <img src="./assets/images/15.jpg" alt="Foto 15" />
+        <img src="./assets/images/16.png" alt="Foto 16" />
+        <img src="./assets/images/17.png" alt="Foto 17" />
+        <img src="./assets/images/18.jpg" alt="Foto 18" />
+        <img src="./assets/images/19.JPG" alt="Foto 19" />
+        <img src="./assets/images/20.JPG" alt="Foto 20" />
+        <img src="./assets/images/21.png" alt="Foto 21" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">
+      Desenvolvido com amor e nas melhores intenções por
+      <a href="https://lucaslinkverse.vercel.app" class="lucas-link" target="_blank">Lucas Code</a>
+      <span class="heart">💜</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
