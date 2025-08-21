@@ -78,4 +78,4 @@ open index.html
 ---
 
 <h2>🧑🏻‍💻 AUTOR</h2> 
-<p>Desenvolvido com amor por <a href="https://lucaslinkverse.vercel.app/">Lucas Code</a>, como forma de ajudar alguém muito especial em um momento difícil.</p>
+<p>Desenvolvido com amor por <a href="https://bio.site/lucascode">Lucas Code</a>, como forma de ajudar alguém muito especial em um momento difícil.</p>
