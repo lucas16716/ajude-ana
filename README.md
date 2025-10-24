@@ -1,7 +1,8 @@
 <h1 align="center">Site de Apoio à Ana Luiza 💜</h1>
 
 <div>
-  
+
+[![License](https://img.shields.io/badge/Licença-MIT-yellow)](./LICENSE)&nbsp;&nbsp;
 [![Status](https://img.shields.io/badge/Status-Finalizado-purple)]()
 
 </div>
@@ -29,9 +30,9 @@ Site criado com carinho e nas melhores intenções para apoiar a recuperação d
 
 <h2 id="tecnologias-e-ferramentas">TECNOLOGIAS E FERRAMENTAS</h2>
 
-- **HTML5:** Estrutura e conteúdo da página;
-- **CSS3:** Estilização visual, responsividade e animações suaves;
-- **JavaScript:** Troca de idiomas e embaralhamento da galeria;
+- **HTML5:** Estrutura semântica e acessível.
+- **CSS3:** Estilização visual, responsividade (com Variáveis e BEM) e animações.
+- **JavaScript:** Troca de idiomas dinâmica e embaralhamento da galeria.
 - **Git/GitHub:** Versionamento e hospedagem do código-fonte;
 - **Vercel:** Plataforma de deploy para o ambiente de produção.
 
@@ -76,6 +77,9 @@ open index.html
 5. Abra um _Pull Request_.
 
 ---
+
+<h2>📝 LICENÇA</h2> 
+<p>Este projeto está licenciado sob a licença MIT. Confira os detalhes na documentação oficial.</p>
 
 <h2>🧑🏻‍💻 AUTOR</h2> 
 <p>Desenvolvido com amor por <a href="https://bio.site/lucascode">Lucas Code</a>, como forma de ajudar alguém muito especial em um momento difícil.</p>
