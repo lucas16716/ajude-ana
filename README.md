@@ -2,8 +2,8 @@
 
 <div>
 
-[![License](https://img.shields.io/badge/Licença-MIT-yellow)](./LICENSE)&nbsp;&nbsp;
-[![Status](https://img.shields.io/badge/Status-Finalizado-purple)]()
+[![Status](https://img.shields.io/badge/Status-Finalizado-purple)]()&nbsp;&nbsp;
+[![License](https://img.shields.io/badge/Licença-MIT-yellow)](./LICENSE)
 
 </div>
 
@@ -26,13 +26,13 @@ Site criado com carinho e nas melhores intenções para apoiar a recuperação d
 - 🔗 Dois botões destacados com os links das campanhas de arrecadação;
 - 🖼️ Galeria de fotos automática, com ordem aleatória;
 - 🌍 Botão para alternar entre os idiomas (Português/Inglês);
-- 💻 Layout responsivo e compatível com diversos dispositivos;
+- 💻 Layout responsivo e compatível com diversos dispositivos.
 
 <h2 id="tecnologias-e-ferramentas">TECNOLOGIAS E FERRAMENTAS</h2>
 
-- **HTML5:** Estrutura semântica e acessível.
-- **CSS3:** Estilização visual, responsividade (com Variáveis e BEM) e animações.
-- **JavaScript:** Troca de idiomas dinâmica e embaralhamento da galeria.
+- **HTML5:** Estrutura semântica e acessível;
+- **CSS3:** Estilização visual, responsividade (com Variáveis e BEM) e animações;
+- **JavaScript:** Troca de idiomas dinâmica e embaralhamento da galeria;
 - **Git/GitHub:** Versionamento e hospedagem do código-fonte;
 - **Vercel:** Plataforma de deploy para o ambiente de produção.
 
