@@ -14,28 +14,30 @@
   <meta property="og:image:height" content="630" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link rel="icon" href="./assets/images/donation.png" type="png" />
+  <link rel="icon" href="./assets/images/donation.png" type="image/png" />
   <title>SOS Ana Luiza</title>
 </head>
 
 <body>
-  <header>
-    <div class="language-switch dropdown">
-      <button class="lang-toggle" onclick="toggleMenu()">
-        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/f0f0f0/globe--v1.png" alt="globo" />
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="language-switch">
+      <button class="lang-toggle" onclick="toggleMenu()" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/f0f0f0/globe--v1.png" alt="Selecionar Idioma" />
         <span id="current-lang">PT</span> ⌵
       </button>
-      <ul class="lang-menu" id="lang-menu">
-        <li onclick="changeLanguage('pt')">🇧🇷 Português</li>
-        <li onclick="changeLanguage('en')">🇺🇸 English</li>
+      <ul class="lang-menu" id="lang-menu" role="menu">
+        <li role="menuitem" onclick="changeLanguage('pt')">🇧🇷 Português</li>
+        <li role="menuitem" onclick="changeLanguage('en')">🇺🇸 English</li>
       </ul>
     </div>
-    <h1 id="main-title">Ajude a Ana Luiza 💜</h1>
+    <h1 id="main-title" class="site-header__title">Ajude a Ana Luiza 💜</h1>
   </header>
-  <main>
-    <section class="intro">
-      <div class="description" id="main-description">
-        <!-- Português -->
+
+  <main id="main-content">
+    <section class="intro-section">
+      <div class="intro-section__description" id="main-description">
         <div data-lang="pt">
           <p>
             Ana Luiza, de apenas 25 anos, sofreu um grave acidente nos Estados Unidos e está atualmente em estado delicado após um traumatismo craniano. Ela passou por uma neurocirurgia de emergência e está internada na UTI. Neste momento, cada dia é uma batalha, mas ela tem mostrado uma força imensa e continua lutando com coragem.
@@ -54,7 +56,6 @@
             <strong>Contamos com a sua solidariedade. Obrigado!</strong>
           </p>
         </div>
-        <!-- English -->
         <div data-lang="en" style="display: none;">
           <p>
             Ana Luiza, only 25 years old, was in a serious accident in the United States and is currently in critical condition after suffering a traumatic brain injury. She underwent emergency neurosurgery and is now in the ICU. Right now, every day is a battle, but she has shown incredible strength and continues to fight with courage.
@@ -75,42 +76,44 @@
         </div>
       </div>
     </section>
+
     <div class="donation-buttons">
-      <a href="https://www.vakinha.com.br/vaquinha/ajuda-para-recuperacao-da-ana-luiza-thaissa-assis-nunes-proenca" class="donate-button br" target="_blank" rel="noopener noreferrer">Doe em Real (Vakinha)</a>
-      <a href="https://www.gofundme.com/f/xuvhfh-support-anas-journey-to-recovery" class="donate-button en" target="_blank" rel="noopener noreferrer">Donate in USD (GoFundMe)</a>
+      <a href="https://www.vakinha.com.br/vaquinha/ajuda-para-recuperacao-da-ana-luiza-thaissa-assis-nunes-proenca" class="donation-buttons__button donation-buttons__button--br" target="_blank" rel="noopener noreferrer">Doe em Real <br>(Vakinha)</a>
+      <a href="https://www.gofundme.com/f/xuvhfh-support-anas-journey-to-recovery" class="donation-buttons__button donation-buttons__button--en" target="_blank" rel="noopener noreferrer">Donate in USD (GoFundMe)</a>
     </div>
-    </section>
+
     <section class="gallery-section">
-      <div class="gallery" id="gallery">
-        <img src="./assets/images/1.JPG" alt="Foto 1" />
-        <img src="./assets/images/2.jpg" alt="Foto 2" />
-        <img src="./assets/images/3.jpg" alt="Foto 3" />
-        <img src="./assets/images/4.png" alt="Foto 4" />
-        <img src="./assets/images/5.png" alt="Foto 5" />
-        <img src="./assets/images/6.png" alt="Foto 6" />
-        <img src="./assets/images/7.png" alt="Foto 7" />
-        <img src="./assets/images/8.png" alt="Foto 8" />
-        <img src="./assets/images/9.png" alt="Foto 9" />
-        <img src="./assets/images/10.png" alt="Foto 10" />
-        <img src="./assets/images/11.png" alt="Foto 11" />
-        <img src="./assets/images/12.png" alt="Foto 12" />
-        <img src="./assets/images/13.JPG" alt="Foto 13" />
-        <img src="./assets/images/14.png" alt="Foto 14" />
-        <img src="./assets/images/15.jpg" alt="Foto 15" />
-        <img src="./assets/images/16.png" alt="Foto 16" />
-        <img src="./assets/images/17.png" alt="Foto 17" />
-        <img src="./assets/images/18.jpg" alt="Foto 18" />
-        <img src="./assets/images/anabia.jpg" alt="Foto 19" />
-        <img src="./assets/images/20.JPG" alt="Foto 20" />
-        <img src="./assets/images/21.png" alt="Foto 21" />
+      <div class="gallery-grid" id="gallery">
+        <img src="./assets/images/1.JPG" alt="Foto 1" class="gallery-grid__image" />
+        <img src="./assets/images/2.jpg" alt="Foto 2" class="gallery-grid__image" />
+        <img src="./assets/images/3.jpg" alt="Foto 3" class="gallery-grid__image" />
+        <img src="./assets/images/4.png" alt="Foto 4" class="gallery-grid__image" />
+        <img src="./assets/images/5.png" alt="Foto 5" class="gallery-grid__image" />
+        <img src="./assets/images/6.png" alt="Foto 6" class="gallery-grid__image" />
+        <img src="./assets/images/7.png" alt="Foto 7" class="gallery-grid__image" />
+        <img src="./assets/images/8.png" alt="Foto 8" class="gallery-grid__image" />
+        <img src="./assets/images/9.png" alt="Foto 9" class="gallery-grid__image" />
+        <img src="./assets/images/10.png" alt="Foto 10" class="gallery-grid__image" />
+        <img src="./assets/images/11.png" alt="Foto 11" class="gallery-grid__image" />
+        <img src="./assets/images/12.png" alt="Foto 12" class="gallery-grid__image" />
+        <img src="./assets/images/13.JPG" alt="Foto 13" class="gallery-grid__image" />
+        <img src="./assets/images/14.png" alt="Foto 14" class="gallery-grid__image" />
+        <img src="./assets/images/15.jpg" alt="Foto 15" class="gallery-grid__image" />
+        <img src="./assets/images/16.png" alt="Foto 16" class="gallery-grid__image" />
+        <img src="./assets/images/17.png" alt="Foto 17" class="gallery-grid__image" />
+        <img src="./assets/images/18.jpg" alt="Foto 18" class="gallery-grid__image" />
+        <img src="./assets/images/anabia.jpg" alt="Foto 19" class="gallery-grid__image" />
+        <img src="./assets/images/20.JPG" alt="Foto 20" class="gallery-grid__image" />
+        <img src="./assets/images/21.png" alt="Foto 21" class="gallery-grid__image" />
       </div>
     </section>
   </main>
-  <footer>
-    <p id="footer-text">
+
+  <footer class="site-footer">
+    <p id="footer-text" class="site-footer__text">
       Desenvolvido com amor e nas melhores intenções por
-      <a href="https://bio.site/lucascode" class="lucas-link" target="_blank" rel="noopener noreferrer">Lucas Code</a>
-      <span class="heart">💜</span>
+      <a href="https://bio.site/lucascode" class="site-footer__link" target="_blank" rel="noopener noreferrer">Lucas Code</a>
+      <span class="site-footer__heart">💜</span>
     </p>
   </footer>
   <script src="script.js"></script>
