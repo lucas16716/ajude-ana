@@ -1,7 +1,6 @@
 (() => {
   "use strict";
 
-  // --- Cache de Elementos DOM ---
   const langMenu = document.getElementById("lang-menu");
   const langToggleButton = document.querySelector(".lang-toggle");
   const currentLangDisplay = document.getElementById("current-lang");
@@ -10,14 +9,12 @@
   const footerTextContainer = document.getElementById("footer-text");
   const galleryContainer = document.getElementById("gallery");
 
-  // --- Seletor de Idioma ---
-
   // Mostra/Esconde o menu dropdown de idiomas
   window.toggleMenu = function () {
     if (langMenu) {
       langMenu.classList.toggle("show");
       const isShown = langMenu.classList.contains("show");
-      langToggleButton.setAttribute("aria-expanded", isShown); // Atualiza ARIA
+      langToggleButton.setAttribute("aria-expanded", isShown);
     }
   };
 
@@ -29,14 +26,14 @@
         !langMenu.contains(event.target)
       ) {
         langMenu.classList.remove("show");
-        langToggleButton.setAttribute("aria-expanded", "false"); // Atualiza ARIA
+        langToggleButton.setAttribute("aria-expanded", "false");
       }
     }
   });
 
   // Troca o idioma visível na página
   window.changeLanguage = function (lang) {
-    if (!lang || !["pt", "en"].includes(lang)) return; // Validação básica
+    if (!lang || !["pt", "en"].includes(lang)) return;
 
     // Atualiza o texto do botão (PT/EN)
     if (currentLangDisplay) {
@@ -46,7 +43,6 @@
     // Alterna a visibilidade dos blocos de texto
     if (allLangContent.length > 0) {
       allLangContent.forEach((el) => {
-        // Mantém a lógica original de style.display
         el.style.display =
           el.getAttribute("data-lang") === lang ? "block" : "none";
       });
@@ -58,9 +54,8 @@
         lang === "pt" ? "Ajude a Ana Luiza 💜" : "Help Ana Luiza 💜";
     }
 
-    // Atualiza o texto do rodapé (antes do link)
+    // Atualiza o texto do rodapé
     if (footerTextContainer && footerTextContainer.childNodes.length > 0) {
-      // Modifica o nodeValue do primeiro nó (que é o texto)
       footerTextContainer.childNodes[0].nodeValue =
         lang === "pt"
           ? "Desenvolvido com amor e nas melhores intenções por "
@@ -75,21 +70,16 @@
     }
   };
 
-  // --- Embaralhamento da Galeria ---
-
   // Função para embaralhar as imagens da galeria
   function shuffleGallery() {
     if (galleryContainer) {
       const images = Array.from(galleryContainer.children);
-      // Algoritmo simples de embaralhamento (original)
       const shuffled = images.sort(() => 0.5 - Math.random());
 
-      // Limpa e readiciona na ordem embaralhada (lógica original)
       galleryContainer.innerHTML = "";
       shuffled.forEach((img) => galleryContainer.appendChild(img));
     }
   }
 
-  // Executa o embaralhamento quando o DOM estiver pronto
   window.addEventListener("DOMContentLoaded", shuffleGallery);
 })();

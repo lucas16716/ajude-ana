@@ -31,11 +31,11 @@ Site criado com carinho e nas melhores intenções para apoiar a recuperação d
 
 <h2 id="tecnologias-e-ferramentas">TECNOLOGIAS E FERRAMENTAS</h2>
 
-- **HTML5:** Estrutura semântica e acessível;
-- **CSS3:** Estilização visual, responsividade (com Variáveis e BEM) e animações;
-- **JavaScript:** Troca de idiomas dinâmica e embaralhamento da galeria;
-- **Git/GitHub:** Versionamento e hospedagem do código-fonte;
-- **Vercel:** Plataforma de deploy para o ambiente de produção.
+- **HTML5 →** Estrutura semântica e acessível;
+- **CSS3 →** Estilização visual, responsividade (com Variáveis e BEM) e animações;
+- **JavaScript →** Troca de idiomas dinâmica e embaralhamento da galeria;
+- **Git/GitHub →** Versionamento e hospedagem do código-fonte;
+- **Vercel →** Plataforma de deploy para o ambiente de produção.
 
 ---
 

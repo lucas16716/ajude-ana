@@ -1,10 +1,9 @@
-/* --- 1. CONFIGURAÇÕES GLOBAIS --- */
 :root {
   /* Cores */
   --color-text: #333;
   --color-text-header: #f0f0f0;
   --color-text-footer: #555;
-  --color-text-menu: #333; /* Cor do texto no menu dropdown */
+  --color-text-menu: #333;
   --color-bg-body: #fdfdfd;
   --color-bg-header-start: #a6c0fe;
   --color-bg-header-end: #f68084;
@@ -14,7 +13,7 @@
   --color-button-br: #6a1b9a;
   --color-button-en: #c62828;
   --color-link-footer: #6a1b9a;
-  --color-link-footer-accent: #0d7fc8; /* Cor do 'Code' inline */
+  --color-link-footer-accent: #0d7fc8;
   --color-border: #ddd;
   --color-shadow: rgba(0, 0, 0, 0.1);
   --color-shadow-menu: rgba(0, 0, 0, 0.15);
@@ -28,7 +27,7 @@
   );
 
   /* Tipografia */
-  --font-family-base: "Poppins", sans-serif;
+  --font-family-base: "Poppins", Arial, sans-serif;
 
   /* Efeitos */
   --radius-button: 8px;
@@ -40,7 +39,6 @@
   --transition-fast: 0.2s;
 }
 
-/* Reset Global */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,7 +59,6 @@ body {
   flex-direction: column;
 }
 
-/* --- 2. UTILITÁRIOS --- */
 /* Link "Pular Conteúdo" */
 .skip-link {
   position: absolute;
@@ -88,7 +85,6 @@ button:focus-visible,
   border-radius: var(--radius-menu);
 }
 
-/* --- 3. LAYOUT PRINCIPAL --- */
 /* Cabeçalho */
 .site-header {
   text-align: center;
@@ -113,7 +109,6 @@ main {
   color: var(--color-text-footer);
 }
 
-/* --- 4. COMPONENTES --- */
 /* Seletor de Idioma */
 .language-switch {
   position: absolute;
@@ -287,7 +282,7 @@ main {
   margin-right: 0.3rem;
 }
 
-/* --- 5. ANIMAÇÕES --- */
+/* Animações */
 @keyframes fade {
   from {
     opacity: 0;
@@ -297,7 +292,7 @@ main {
   }
 }
 
-/* --- 6. RESPONSIVIDADE --- */
+/* Responsividade */
 @media (max-width: 600px) {
   .language-switch {
     position: relative;
